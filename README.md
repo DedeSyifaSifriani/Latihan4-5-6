@@ -47,9 +47,8 @@ if (!session()->get('logged_in')) {
 
 
 ### 📷 Screenshot:
-_Tampilkan halaman login, session aktif, redirect saat belum login_
-
----
+_Tampilkan halaman login
+![Hasil akhir.png](path/to/image.png)
 
 ## 📚 Modul 5 – Pagination dan Pencarian
 
