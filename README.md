@@ -52,7 +52,7 @@ _Bukti pengerjaan
  [![Tampilan Awal](latihan4/bukti2.png)](latihan4/bukti2.png)
  [![Tampilan Awal](latihan4/bukti3.png)](latihan4/bukti3.png)
 _Tampilkan halaman login
- [![Tampilan Awal](latihan4/hasilakhir.png)](latihan4/hasilakhir.png)
+ [![Tampilan Awal](latihan4/Hasilakhir.png)](latihan4/Hasilakhir.png)
 _Akun dibatasi
  [![Tampilan Awal](latihan4/akundibatasi.png)](latihan4/akundibatasi.png)
 
