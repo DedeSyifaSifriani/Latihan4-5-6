@@ -47,8 +47,12 @@ if (!session()->get('logged_in')) {
 
 
 ### 📷 Screenshot:
+_Bukti pengerjaan
+ [![Tampilan Awal](latihan4/bukti1.png)](latihan4/bukti1.png)
+ (latihan4/bukti2.png)](latihan4/bukti2.png)
 _Tampilkan halaman login
 ![Hasil akhir.png](path/to/image.png)
+_Akun dibatasi
 
 ## 📚 Modul 5 – Pagination dan Pencarian
 
