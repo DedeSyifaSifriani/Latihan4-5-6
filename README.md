@@ -52,9 +52,9 @@ _Bukti pengerjaan
  [![Tampilan Awal](latihan4/bukti2.png)](latihan4/bukti2.png)
  [![Tampilan Awal](latihan4/bukti3.png)](latihan4/bukti3.png)
 _Tampilkan halaman login
- [![Tampilan Awal](latihan4/Hasil akhir.png)](latihan4/Hasil akhir.png)
+ [![Tampilan Awal](latihan4/Hasilakhir.png)](latihan4/Hasilakhir.png)
 _Akun dibatasi
- [![Tampilan Awal](latihan4/akun dibatasi.png)](latihan4/akun dibatasi.png)
+ [![Tampilan Awal](latihan4/akundibatasi.png)](latihan4/akundibatasi.png)
 
 ## 📚 Modul 5 – Pagination dan Pencarian
 
@@ -76,9 +76,9 @@ $artikel = $model->like('judul', $q)->paginate(10);
 <?= $pager->only(['q'])->links(); ?>
 📷 Screenshot:
 _Tampilan pagination
- [![Tampilan Awal](latihan5/bukti berhasil membuat pagination.png)](latihan5/bukti berhasil membuar pagination.png)
+ [![Tampilan Awal](latihan5/buktiberhasilmembuatpagination.png)](latihan5/bukti berhasilmembuatpagination.png)
 _Hasil pencarian
- [![Tampilan Awal](latihan5/filter data.png)](latihan5/filter data.png)
+ [![Tampilan Awal](latihan5/filterdata.png)](latihan5/filterdata.png)
 
 ## 🖼️ Modul 6 – Upload File Gambar
 
