@@ -49,10 +49,12 @@ if (!session()->get('logged_in')) {
 ### 📷 Screenshot:
 _Bukti pengerjaan
  [![Tampilan Awal](latihan4/bukti1.png)](latihan4/bukti1.png)
- (latihan4/bukti2.png)](latihan4/bukti2.png)
+ [![Tampilan Awal](latihan4/bukti2.png)](latihan4/bukti2.png)
+ [![Tampilan Awal](latihan4/bukti3.png)](latihan4/bukti3.png)
 _Tampilkan halaman login
-![Hasil akhir.png](path/to/image.png)
+ [![Tampilan Awal](latihan4/Hasil akhir.png)](latihan4/Hasil akhir.png)
 _Akun dibatasi
+ [![Tampilan Awal](latihan4/akun dibatasi.png)](latihan4/akun dibatasi.png)
 
 ## 📚 Modul 5 – Pagination dan Pencarian
 
@@ -73,7 +75,10 @@ $artikel = $model->like('judul', $q)->paginate(10);
 
 <?= $pager->only(['q'])->links(); ?>
 📷 Screenshot:
-Tampilkan daftar artikel + hasil pencarian + tampilan pagination
+_Tampilan pagination
+ [![Tampilan Awal](latihan5/bukti berhasil membuat pagination.png)](latihan5/bukti berhasil membuar pagination.png)
+_Hasil pencarian
+ [![Tampilan Awal](latihan5/filter data.png)](latihan5/filter data.png)
 
 ## 🖼️ Modul 6 – Upload File Gambar
 
@@ -132,4 +137,11 @@ $artikel->insert([
   /gambar/  ← folder upload gambar
 .env
 README.md
+
+
+📷 Screenshot:
+_Tampilan tambah gambar
+ [![Tampilan Awal](latihan6/tambah gambar.png)](latihan6/tambah gambar.png)
+_Setelah berhasil
+ [![Tampilan Awal](latihan6/berhasil tambah gambar.png)](latihan6/berhasil tambah gambar.png)
 
