@@ -74,6 +74,7 @@ $artikel = $model->like('judul', $q)->paginate(10);
 </form>
 
 <?= $pager->only(['q'])->links(); ?>
+```
 
 
 **📷 Screenshot :**
@@ -82,7 +83,7 @@ _Tampilan pagination
 _Hasil pencarian
  [![Tampilan Awal](latihan5/filterdata.png)](latihan5/filterdata.png)
 
-## **📁Modul 6 – Upload File Gambar (CodeIgniter 4)**
+# 📁 Modul 6 – Upload File Gambar (CodeIgniter 4)
 
 Modul ini merupakan bagian dari praktikum Pemrograman Web 2 yang berfokus pada fitur **upload gambar** untuk artikel di portal berita berbasis CodeIgniter 4.
 
@@ -90,31 +91,31 @@ Modul ini merupakan bagian dari praktikum Pemrograman Web 2 yang berfokus pada f
 
 ## ✨ Fitur Utama
 
-- Form tambah artikel dengan upload gambar
-- Validasi: judul wajib diisi
-- Gambar disimpan di folder `public/gambar/`
-- Nama file gambar disimpan di database dan ditampilkan di halaman artikel
+- **Form tambah artikel** dengan upload gambar
+- **Validasi**: judul wajib diisi
+- **Penyimpanan gambar** di folder `public/gambar/`
+- **Database**: nama file gambar disimpan di database dan ditampilkan di halaman artikel
 
 ---
 
 ## 🧱 Struktur Terkait
 
-| Komponen   | Lokasi                                     |
-|------------|---------------------------------------------|
-| Controller | `app/Controllers/Artikel.php`               |
-| Model      | `app/Models/ArtikelModel.php`              |
-| View       | `app/Views/artikel/form_add.php`           |
-| Folder Upload | `public/gambar/`                        |
+| Komponen | Lokasi |
+|----------|--------|
+| Controller | `app/Controllers/Artikel.php` |
+| Model | `app/Models/ArtikelModel.php` |
+| View | `app/Views/artikel/form_add.php` |
+| Folder Upload | `public/gambar/` |
 
 ---
 
 ## 🔄 Proses Upload File
 
 ### 📥 Controller (`Artikel.php`)
+
 ```php
 $file = $this->request->getFile('gambar');
 $file->move(ROOTPATH . 'public/gambar');
-
 $artikel->insert([
     'judul'  => $this->request->getPost('judul'),
     'isi'    => $this->request->getPost('isi'),
@@ -122,4 +123,30 @@ $artikel->insert([
     'gambar' => $file->getName(),
     'status' => 1
 ]);
+```
 
+### 📋 Penjelasan Kode
+
+1. **Mengambil file gambar** dari request menggunakan `getFile('gambar')`
+2. **Memindahkan file** ke folder `public/gambar/` dengan `move()`
+3. **Menyimpan data artikel** ke database termasuk nama file gambar
+4. **Membuat slug** otomatis dari judul artikel menggunakan `url_title()`
+
+### 🎯 Validasi dan Keamanan
+
+- **Validasi judul**: wajib diisi sebelum artikel dapat disimpan
+- **Folder upload**: terpisah dari aplikasi untuk keamanan
+- **Status artikel**: otomatis diset ke 1 (aktif)
+
+### 💡 Tips Implementasi
+
+- Pastikan folder `public/gambar/` memiliki permission write
+- Tambahkan validasi untuk tipe file gambar yang diizinkan
+- Pertimbangkan untuk menggunakan nama file unik untuk menghindari konflik
+- Implementasikan validasi ukuran file maksimal
+
+  **📷 Screenshot :**
+_Tambah gamabr
+ ![Tampilan Awal](latihan6/tambahgambar.png)
+_Berhasil tambah gambar
+ [![Tampilan Awal](latihan6/berhasiltambahgambar.png)](latihan6/berhasiltambahgambar.png)
