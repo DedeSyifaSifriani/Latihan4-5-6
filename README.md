@@ -76,76 +76,50 @@ $artikel = $model->like('judul', $q)->paginate(10);
 <?= $pager->only(['q'])->links(); ?>
 
 
-📷 Screenshot:
+📷 **Screenshot** :
 _Tampilan pagination
  ![Tampilan Awal](latihan5/buktiberhasilmembuatpagination.png)
 _Hasil pencarian
  [![Tampilan Awal](latihan5/filterdata.png)](latihan5/filterdata.png)
 
-_ _ _
-## 🖼️ Modul 6 – Upload File Gambar
+# 📁 Modul 6 – Upload File Gambar (CodeIgniter 4)
 
+Modul ini merupakan bagian dari praktikum Pemrograman Web 2 yang berfokus pada fitur **upload gambar** untuk artikel di portal berita berbasis CodeIgniter 4.
 
-### ✨ Fitur Utama:
-- Form tambah artikel disertai upload gambar
-- Validasi judul wajib diisi
-- Gambar disimpan di `public/gambar/`
-- Nama file disimpan di database, ditampilkan pada halaman artikel
+---
 
-### 📦 Struktur Terkait:
-- Controller: `Artikel.php`
-- View: `form_add.php`
-- Model: `ArtikelModel.php`
-- Folder upload: `public/gambar`
+## ✨ Fitur Utama
 
-### 🧠 Proses Upload File:
+- Form tambah artikel dengan upload gambar
+- Validasi: judul wajib diisi
+- Gambar disimpan di folder `public/gambar/`
+- Nama file gambar disimpan di database dan ditampilkan di halaman artikel
+
+---
+
+## 🧱 Struktur Terkait
+
+| Komponen   | Lokasi                                     |
+|------------|---------------------------------------------|
+| Controller | `app/Controllers/Artikel.php`               |
+| Model      | `app/Models/ArtikelModel.php`              |
+| View       | `app/Views/artikel/form_add.php`           |
+| Folder Upload | `public/gambar/`                        |
+
+---
+
+## 🔄 Proses Upload File
+
+### 📥 Controller (`Artikel.php`)
 ```php
 $file = $this->request->getFile('gambar');
 $file->move(ROOTPATH . 'public/gambar');
 
 $artikel->insert([
-    'judul' => $this->request->getPost('judul'),
-    'isi' => $this->request->getPost('isi'),
-    'slug' => url_title($this->request->getPost('judul')),
+    'judul'  => $this->request->getPost('judul'),
+    'isi'    => $this->request->getPost('isi'),
+    'slug'   => url_title($this->request->getPost('judul')),
     'gambar' => $file->getName(),
     'status' => 1
 ]);
-```
-
-### 🧠 Tampilkan Gambar di View:
-```php
-<img src="<?= base_url('gambar/' . $row['gambar']); ?>" alt="<?= $row['judul']; ?>" width="300">
-```
-
----
-
-## 🗂️ Struktur Folder Utama
-
-```
-/app
-  /Controllers
-    Artikel.php
-    User.php
-  /Models
-    ArtikelModel.php
-    UserModel.php
-  /Views
-    /artikel
-      form_add.php
-      admin_index.php
-    /user
-      login.php
-  /Filters
-    Auth.php
-/public
-  /gambar/  ← folder upload gambar
-.env
-README.md
-
-
-📷 Screenshot:
-_Tampilan tambah gambar
- [![Tampilan Awal](latihan6/tambah gambar.png)](latihan6/tambah gambar.png)
-_Setelah berhasil
- [![Tampilan Awal](latihan6/berhasil tambah gambar.png)](latihan6/berhasil tambah gambar.png)
 
