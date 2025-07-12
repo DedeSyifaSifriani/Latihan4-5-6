@@ -74,13 +74,17 @@ $artikel = $model->like('judul', $q)->paginate(10);
 </form>
 
 <?= $pager->only(['q'])->links(); ?>
+
+
 📷 Screenshot:
 _Tampilan pagination
  ![Tampilan Awal](latihan5/buktiberhasilmembuatpagination.png)
 _Hasil pencarian
  [![Tampilan Awal](latihan5/filterdata.png)](latihan5/filterdata.png)
 
+_ _ _
 ## 🖼️ Modul 6 – Upload File Gambar
+
 
 ### ✨ Fitur Utama:
 - Form tambah artikel disertai upload gambar
