@@ -47,13 +47,15 @@ if (!session()->get('logged_in')) {
 
 
 ### 📷 Screenshot:
-_Bukti pengerjaan
+**Bukti pengerjaan**
  [![Tampilan Awal](latihan4/bukti1.png)](latihan4/bukti1.png)
  [![Tampilan Awal](latihan4/bukti2.png)](latihan4/bukti2.png)
  [![Tampilan Awal](latihan4/bukti3.png)](latihan4/bukti3.png)
-_Tampilkan halaman login
+
+**Tampilkan halaman login**
  [![Tampilan Awal](latihan4/Hasilakhir.png)](latihan4/Hasilakhir.png)
-_Akun dibatasi
+
+**Akun dibatasi**
  [![Tampilan Awal](latihan4/akundibatasi.png)](latihan4/akundibatasi.png)
 
 ## 📚 Modul 5 – Pagination dan Pencarian
@@ -78,9 +80,10 @@ $artikel = $model->like('judul', $q)->paginate(10);
 
 
 **📷 Screenshot :**
-_Tampilan pagination
+**Tampilan pagination**
  ![Tampilan Awal](latihan5/buktiberhasilmembuatpagination.png)
-_Hasil pencarian
+ 
+**Hasil pencarian**
  [![Tampilan Awal](latihan5/filterdata.png)](latihan5/filterdata.png)
 
 # 📁 Modul 6 – Upload File Gambar (CodeIgniter 4)
@@ -146,7 +149,8 @@ $artikel->insert([
 - Implementasikan validasi ukuran file maksimal
 
   **📷 Screenshot :**
-_Tambah gamabr
+**Tambah gambar**
  ![Tampilan Awal](latihan6/tambahgambar.png)
-_Berhasil tambah gambar
+
+**Hasil tambah gambar**
  [![Tampilan Awal](latihan6/berhasiltambahgambar.png)](latihan6/berhasiltambahgambar.png)
