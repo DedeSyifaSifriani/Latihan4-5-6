@@ -76,13 +76,13 @@ $artikel = $model->like('judul', $q)->paginate(10);
 <?= $pager->only(['q'])->links(); ?>
 
 
-📷 **Screenshot :**
+**📷 Screenshot :**
 _Tampilan pagination
  ![Tampilan Awal](latihan5/buktiberhasilmembuatpagination.png)
 _Hasil pencarian
  [![Tampilan Awal](latihan5/filterdata.png)](latihan5/filterdata.png)
 
-# 📁**Modul 6 – Upload File Gambar (CodeIgniter 4)**
+## **📁Modul 6 – Upload File Gambar (CodeIgniter 4)**
 
 Modul ini merupakan bagian dari praktikum Pemrograman Web 2 yang berfokus pada fitur **upload gambar** untuk artikel di portal berita berbasis CodeIgniter 4.
 
