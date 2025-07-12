@@ -1,6 +1,12 @@
 # Praktikum Pemrograman Web 2 – CodeIgniter 4
 
-Repository ini berisi hasil pengerjaan **Modul 4–6** pada mata kuliah *Pemrograman Web 2* menggunakan framework **CodeIgniter 4**.
+Repository ini berisi hasil pengerjaan **Praktikum 4,FIVE,6** pada mata kuliah *Pemrograman Web 2* menggunakan framework **CodeIgniter 4**.
+
+## Informasi Praktikum
+- **Nama**: [Dede Syifa Sifriani]
+- **NIM**: [312310372]
+- **Kelas**: [TI.23.C2]
+
 
 ---
 
@@ -53,6 +59,7 @@ if (!session()->get('logged_in')) {
  [![Tampilan Awal](latihan4/bukti3.png)](latihan4/bukti3.png)
 
 **Tampilkan halaman login**
+
  [![Tampilan Awal](latihan4/Hasilakhir.png)](latihan4/Hasilakhir.png)
 
 **Akun dibatasi**
@@ -154,3 +161,13 @@ $artikel->insert([
 
 **Hasil tambah gambar**
  [![Tampilan Awal](latihan6/berhasiltambahgambar.png)](latihan6/berhasiltambahgambar.png)
+
+
+
+
+ 
+## 👨‍🏫 Dosen Pengampu
+
+**Agung Nugroho**  
+Universitas Pelita Bangsa  
+Mata Kuliah: Pemrograman Web 2
